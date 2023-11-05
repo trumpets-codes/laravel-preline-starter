@@ -30,5 +30,6 @@
     {{ $slot }}
 </div>
 
+<x-toaster-hub />
 </body>
 </html>
