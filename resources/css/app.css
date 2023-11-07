@@ -4,4 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.hs-overlay-backdrop {
+    z-index: 60 !important;
+}

@@ -1,7 +1,5 @@
-@props(['page' => 'Dashboard'])
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,23 +13,12 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
 </head>
+<body class="font-sans text-gray-900 antialiased">
+<div class="min-h-screen">
 
-<body class="bg-gray-50 dark:bg-slate-900">
+        {{ $slot }}
 
-<livewire:layout.navigation />
-
-<x-responsive-page-header :page="$page" />
-
-<livewire:layout.sidebar />
-
-<div class="w-full pt-10 px-4 sm:px-6 md:px-8 lg:pl-72">
-    {{ $slot }}
 </div>
-
-<livewire:components.notifications />
-
-<x-toaster-hub />
 </body>
 </html>
