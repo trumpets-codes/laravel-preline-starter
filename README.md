@@ -29,7 +29,7 @@ Packages Included :
 2. Livewire (https://livewire.laravel.com/)
 3. Volt (https://livewire.laravel.com/docs/volt)
 4. TailwindCSS (https://tailwindcss.com/)
-5. PrelineUI [v1.9.2] (https://preline.co)
+5. PrelineUI [v1.9.0] (https://preline.co)
 6. Bootstrap Icons (https://icons.getbootstrap.com/)
 7. Livewire Toaster (https://github.com/masmerise/livewire-toaster)
 
