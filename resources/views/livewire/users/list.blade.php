@@ -6,7 +6,7 @@ usesPagination();
 
 
 $users = computed(function () {
-    return \App\Models\User::paginate(5);
+    return \App\Models\User::latest()->paginate(5);
 });
 
 state(['editing' => null]);

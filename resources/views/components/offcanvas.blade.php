@@ -6,10 +6,10 @@
 
 @php
     $position = [
-        'right' => 'hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[70] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden',
-        'left' => 'hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[70] bg-white border-r dark:bg-gray-800 dark:border-gray-700 hidden',
-        'top' => 'hs-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[70] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden',
-        'bottom' => 'hs-overlay-open:translate-y-0 translate-y-full fixed bottom-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[70] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden',
+        'right' => 'hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[80] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden',
+        'left' => 'hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 left-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[80] bg-white border-r dark:bg-gray-800 dark:border-gray-700 hidden',
+        'top' => 'hs-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[80] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden',
+        'bottom' => 'hs-overlay-open:translate-y-0 translate-y-full fixed bottom-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[80] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden',
     ][$position];
 @endphp
 
