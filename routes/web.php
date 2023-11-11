@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Livewire\Volt\Volt;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +15,16 @@ use Livewire\Volt\Volt;
 
 Route::view('/', 'welcome');
 
-Volt::route('central-login', 'pages.auth.central-login')
-    ->name('central-login');
+Route::view('dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
-Volt::route('setup-account', 'pages.auth.setup-account')
-    ->name('setup-account');
+Route::view('users', 'users')
+    ->middleware(['auth', 'verified'])
+    ->name('users');
+
+Route::view('profile', 'profile')
+    ->middleware(['auth'])
+    ->name('profile');
+
+require __DIR__.'/auth.php';
