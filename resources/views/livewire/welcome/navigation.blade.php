@@ -74,15 +74,15 @@
             Dashboard
         </a>
     @else
-        <a href="{{ route('login') }}" wire:navigate
+        <a href="{{ route('central-login') }}" wire:navigate
            class="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
            href="#">Login</a>
 
         @if(Route::has('register'))
-            <a href="{{ route('register') }}" wire:navigate
+            <a href="{{ route('setup-account') }}" wire:navigate
                class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500">
                 <i class="bi bi-person text-base"></i>
-                Register
+                Get Started
             </a>
         @endif
     @endauth
